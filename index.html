@@ -10,16 +10,19 @@
     <header>
        <div class="nav_links">
            <nav>
-                <a class="link_to_page" href="#info_about_me">About me</a>
-                <a class="link_to_page" href="#my_works_id">My works</a>
-                <a class="link_to_page" href="#contact_me_id">Contact me</a>   
+                <button id="btn" class="link_to_page"> 
+                    <a href="#weather_header">Check weather</a> 
+                </button> 
+                <button id="btn_back" class="link_to_page">
+                    <a href="#text">Return to the main page</a> 
+                </button>
             </nav>
         </div>
-        <div class="header_text intro_text">
+        <div id="text" class="header_text intro_text">
             <h1>Hello! I am Nikita Bogdankov, and this is my website about myself</h1>
         </div>
     </header>
-    <main>
+    <main id="info">
         <div id="info_about_me" class="block_info">
             <h2 class="title block_animation">About me</h2>
             <p class="just_text block_animation">I am 18 years old</p>
@@ -79,6 +82,29 @@
             </div>
         </div>
     </main>
+    
+    <div id="weather" class="weather">
+        <div id="weather_header" class="header_text intro_text">
+            <h1>Here is the weather in Innopolis now</h1>
+        </div>
+        <div class="block_info block_animation">
+            <h2 class="title">Temperature</h2>
+            <div>
+                <span class="just_text">The weather in Celcium is </span>
+                <span class="just_text" id="weather_text_c"></span>
+            </div>
+            <div class="margin_up m1">
+                <span class="just_text">The weather in Fahrenheit is </span>
+                <span class="just_text" id="weather_text_f"></span>
+            </div>
+            <div class="margin_up m2">
+                <span class="just_text">The humidity now is </span>
+                <span class="just_text" id="weather_text_h"></span>
+            </div>
+        </div>
+    </div>
+    
+    
     <footer class="footer">
         <div class="left_footer">
             <p class="little_text">Bogdankov Nikita</p>
@@ -88,6 +114,7 @@
             <p class="little_text">Innopolis University</p>
         </div>
     </footer>
+    
 </body>
 </html>
 
