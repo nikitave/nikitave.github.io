@@ -116,6 +116,10 @@ body {
     margin-left: 200px;
 }
 
+.m3 {
+    margin-left: 300px;
+}
+
 .margin_up {
     margin-top: 40px;
 }
@@ -147,6 +151,25 @@ body {
 
 .icon:hover {
     transform: translateY(-10px);
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left_part {
+    width: 60%;
+}
+
+.right_part {
+    width: 40%;
+    text-align: center;
+}
+
+.weather_image {
+    height: 200px;
+    width: 200px;
 }
 
 .footer {
@@ -227,11 +250,15 @@ body {
     }
     
     .m1 {
-        margin-left: 50px;
+        margin-left: 40px;
     }
     
     .m2 {
-        margin-left: 100px;
+        margin-left: 80px;
+    }
+    
+    .m3 {
+        margin-left: 120px;
     }
     
     .big_image {
@@ -245,6 +272,19 @@ body {
     
     .icons {
         margin-bottom: 15px;
+    }
+    
+    .flex_container {
+        flex-direction: column-reverse;
+    }
+    
+    .left_part {
+        width: 100%;
+    }
+    
+    .right_part {
+        width: 100%;
+        
     }
 }
 

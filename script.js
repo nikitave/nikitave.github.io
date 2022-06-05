@@ -22,6 +22,9 @@ let btnBack = document.getElementById('btn_back');
 let weather_text_c = document.getElementById('weather_text_c');
 let weather_text_f = document.getElementById('weather_text_f');
 let weather_text_h = document.getElementById('weather_text_h');
+let weather_text_v = document.getElementById('weather_text_v');
+let weather_image_url;
+let weather_image = document.getElementById('weather_image');
 
 async function getWeather() {
     const res = await fetch('https://weatherdbi.herokuapp.com/data/weather/innopolis');
@@ -40,6 +43,9 @@ btn.addEventListener('click', () => {
         weather_text_c.textContent = weather.currentConditions.temp.c;
         weather_text_f.textContent = weather.currentConditions.temp.f;
         weather_text_h.textContent = weather.currentConditions.humidity;
+        weather_text_v.textContent = weather.currentConditions.wind.km;
+        weather_image_url = weather.currentConditions.iconURL;
+        weather_image.src = weather_image_url;
         console.log(weather);  
     })
 })
