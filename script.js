@@ -23,6 +23,8 @@ let weather_text_c = document.getElementById('weather_text_c');
 let weather_text_f = document.getElementById('weather_text_f');
 let weather_text_h = document.getElementById('weather_text_h');
 let weather_text_v = document.getElementById('weather_text_v');
+const weather_text_array = [weather_text_c, weather_text_f,
+                           weather_text_h, weather_text_v]
 let weather_image_url;
 let weather_image = document.getElementById('weather_image');
 
@@ -44,10 +46,9 @@ btn.addEventListener('click', () => {
         const weather_api = weather.currentConditions;
         const weather_text = [weather_api.temp.c, weather_api.temp.f, 
                              weather_api.humidity, weather_api.wind.km]
-        weather_text_c.textContent = weather_text[0];
-        weather_text_f.textContent = weather_text[1];
-        weather_text_h.textContent = weather_text[2];
-        weather_text_v.textContent = weather_text[3];
+        for (let i = 0; i < 4; i++) {
+            weather_text_array[i].textContent = weather_text[i];
+        }
         weather_image_url = weather_api.iconURL;
         weather_image.src = weather_image_url;
         console.log(weather);  
