@@ -48,6 +48,7 @@ for (var _i = 0, _a = elements; _i < _a.length; _i++) {
     var element = _a[_i];
     observer.observe(element);
 }
+var i = 0;
 var infoElement = document.getElementById('info');
 var headerText = document.getElementById('text');
 var weatherBlock = document.getElementById('weather');
@@ -93,10 +94,10 @@ btn.addEventListener('click', function () {
         };
         var api_array = [api.weather_c, api.weather_f,
             api.weather_h, api.weather_wind, api.weather_url];
-        for (var i = 0; i < 4; i++) {
+        for (i; i < 4; i++) {
             weather_text_array[i].textContent = api_array[i];
         }
-        weather_image_url = api_array[4];
+        weather_image_url = api_array[i];
         document.querySelector(".weather_image").src = weather_image_url;
     });
 });
