@@ -23,7 +23,7 @@ body {
 
 .link_to_page:hover {
     opacity: 1;
-    
+
 }
 
 .header_text {
@@ -89,7 +89,7 @@ body {
 }
 
 .block_animation {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
 }
 
@@ -220,70 +220,70 @@ body {
 
 
 @media (max-width: 720px) {
-    
+
     .intro_text {
         font-size: 25px;
         line-height: 50px;
     }
-    
+
     .text {
         font-size: 12px;
         line-height: 14px;
     }
-    
+
     .nav_links {
         font-size: 15px;
         height: 35px;
     }
-    
+
     .link_to_page {
         font-size: 15px;
     }
-    
+
     .title {
         font-size: 20px;
     }
-    
+
     .just_text {
         font-size: 15px;
     }
-    
+
     .m1 {
         margin-left: 40px;
     }
-    
+
     .m2 {
         margin-left: 80px;
     }
-    
+
     .m3 {
         margin-left: 120px;
     }
-    
+
     .big_image {
         margin-bottom: 20px;
     }
-    
+
     .icon {
         height: 75px;
         width: 75px;
     }
-    
+
     .icons {
         margin-bottom: 15px;
     }
-    
+
     .flex_container {
         flex-direction: column-reverse;
     }
-    
+
     .left_part {
         width: 100%;
     }
-    
+
     .right_part {
         width: 100%;
-        
+
     }
 }
 
@@ -293,16 +293,16 @@ body {
         font-size: 18px;
         line-height: 50px;
     }
-    
+
     .icon {
         width: 50px;
         height: 50px;
     }
-    
+
     .nav_links {
         padding-right: 0;
     }
-    
+
     .block_info {
         margin-left: 20px;
         margin-right: 20px;
